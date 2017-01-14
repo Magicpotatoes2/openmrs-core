@@ -7,6 +7,7 @@ matrix:
 branches:
   only:
     - master
+    - sonar-bcode
 after_success:
   - mvn jacoco:report coveralls:report
 notifications:
